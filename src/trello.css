@@ -1,0 +1,197 @@
+/* BASE */
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+header {
+  overflow: hidden;
+  margin: 0;
+  padding: 0.2em;
+  color: #fff;
+  background-color: #48bdff;
+}
+
+input {
+  border-radius: 4px;
+}
+
+/* END BASE */
+
+.app-name {
+  margin: 0;
+  padding: 0;
+  text-indent: 0.5em;
+  color: #fff;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.list {
+  position: relative;
+  width: 235px;
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid #999;
+  border-radius: 4px;
+  background-color: #e3e3e3;
+}
+
+.list h2 {
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  font-weight: 400;
+  box-sizing: border-box;
+  padding-right: 40px;
+}
+
+.list input.card-input {
+  margin-top: 10px;
+  border: 1px solid #ccc;
+}
+
+.list input {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 0;
+  padding: 5px 10px;
+  border: 0;
+  box-shadow: none;
+}
+.list input:focus {
+  outline: 0;
+}
+.list.new-list {
+  padding: 13px 10px;
+  background-color: #48bdff;
+}
+
+.list-inline {
+  display: inline-block;
+  margin: 5px;
+}
+
+.lists-container {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+
+.remove {
+  width: 15px;
+  height: 15px;
+  background: url( img/x.svg);
+}
+
+.remove-small {
+  top:3px;
+  width: 10px;
+  height: 10px;
+  background: url( img/x_sm.svg);
+}
+.edit-list{
+  position: absolute;
+  top: 5px;
+  right: 30px;
+  margin: 6px;
+  color: #205c7e;
+}
+.edit-card{
+  position: absolute;
+  top: 5px;
+  right: 30px;
+  margin: 6px;
+  color: #205c7e;
+}
+.remove-list {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  margin: 6px;
+  color: #205c7e;
+}
+
+.remove-card {
+  position: absolute;
+  top: 9px;
+  right: 8px;
+}
+
+.no-display {
+  display: none;
+}
+
+.card {
+  position: relative;
+  margin: 10px 0;
+  padding: 20px;
+  border: 1px solid #b9b9b9;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.edit {
+  width: 15px;
+  height: 15px;
+  background: url( img/pen_alt_stroke.svg);
+}
+
+.edit-small {
+  width: 10px;
+  height: 10px;
+  background: url( img/pen_alt_stroke_sm.svg);
+}
+
+.edit-card {
+  position: absolute;
+  top: 3px;
+  right: 20px;
+  display: block;
+}
+
+.edit:hover {
+  background: url( img/pen_alt_fill.svg);
+}
+
+.edit_sm:hover {
+  background: url( img/pen_alt_fill_sm.svg);
+}
+
+.card:hover {
+  border-color: #205c7e;
+}
+
+.hand {
+  cursor: pointer;
+}
+
+input.search {
+  width: 200px;
+  margin-top: 4px;
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+
+.select-list {
+  margin: 10px 0 0 0;
+}
+
+.header-link {
+  vertical-align: middle;
+  color: #fff;
+}
+
+.header-link:hover {
+  color: #e3e3e3;
+}
+
+[ng\:cloak],
+[ng-cloak],
+.ng-cloak {
+  display: none;
+}

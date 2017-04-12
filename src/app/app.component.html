@@ -1,0 +1,34 @@
+<header>
+  <div class='row'>
+    <h1 class='app-name left'>trololo</h1>
+  </div>
+</header>
+<section id="lists-container" class="lists-container" ng-controller="listsCtrl as listsCtrl">
+  <div class="row">
+    <div class="list list-inline" *ngFor="let item of items">
+      <a href="#" class="hand" (click)="removeItem(item)"> <span class="remove-small remove-list"></span> </a>
+      <!--<a href="#" class="hand"> <span class="edit-small edit-list"></span></a>-->
+      <h2>{{item.name}}</h2>
+      <div class="card" *ngFor="let card of listCard(item.id)">
+        <div *ngIf="!card.isEditing">
+          <div class="remove-small remove-card hand" (click)="removeCard(card)"></div>
+          <div class="edit-small edit-card hand" (click)="editCard(card)"></div>
+          {{card.name}}
+        </div>
+        <div *ngIf="card.isEditing">
+            <input type="text" #upCard (keydown.enter)="updateCard(upCard.value, card)" value="{{card.name}}">
+        </div>
+
+      </div>
+      <div class="new-card">
+        <input class="card-input" type="text" #newCard (keydown.enter)="addCard(newCard.value, item.id)" (keyup.enter)="newCard.value='' " placeholder="Task">
+      </div>
+    </div>
+
+    <div class="list new-list list-inline">
+      <!--<form action="">-->
+        <input #newList (keydown.enter)="addItem(newList.value)" (keyup.enter)="newList.value='' " placeholder="Bord">
+      <!--</form>-->
+    </div>
+  </div>
+</section>
